@@ -15,12 +15,12 @@ const Footer = () => (
     </Stack>
     <Typography
       variant="h5"
-      sx={{ fontSize: { lg: "28px", xs: "20px" } }}
+      sx={{ fontSize: { lg: "16px", xs: "12px" } }}
       mt="41px"
       textAlign="center"
       pb="40px"
     >
-      Made with ❤️ by JavaScript Mastery
+      copywritten by Folka.inc © 2021
     </Typography>
   </Box>
 );
