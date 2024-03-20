@@ -5,7 +5,7 @@ import HeroBannerImage from "../assets/images/banner.png";
 
 const HeroBanner = () => (
   <Box
-    sx={{ mt: { lg: "212px", xs: "70px" }, ml: { sm: "50px" } }}
+    sx={{ mt: { lg: "100px", xs: "70px" }, ml: { sm: "50px" } }}
     position="relative"
     p="20px"
   >
@@ -53,7 +53,7 @@ const HeroBanner = () => (
     >
       Exercise
     </Typography>
-    <img src={HeroBannerImage} alt="hero-banner" className="hero-banner-img" />
+    {/* <img src={HeroBannerImage} alt="hero-banner" className="hero-banner-img" /> */}
   </Box>
 );
 
