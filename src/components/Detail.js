@@ -60,7 +60,6 @@ const Detail = ({ exerciseDetail }) => {
             </Button>
             <Typography
               textTransform="capitalize"
-              f6faf7
               sx={{ fontSize: { lg: "24px", xs: "16px" } }}
             >
               {item.name}
