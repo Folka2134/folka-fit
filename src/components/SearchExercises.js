@@ -10,13 +10,20 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   useEffect(() => {
     const fetchExercisesData = async () => {
-      const bodyPartsData = await fetchData(
-        "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
-        exerciseOptions
-      );
+      try {
+        const bodyPartsData = await fetchData(
+          "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
+          exerciseOptions,
+        );
 
-      setBodyParts(["all", ...bodyPartsData]);
-      console.log(bodyParts);
+        if (Array.isArray(bodyPartsData)) {
+          setBodyParts(["all", ...bodyPartsData]);
+        } else {
+          console.error("Unexpected format for bodyPartsData:", bodyPartsData);
+        }
+      } catch (error) {
+        console.error("Failed to fetch body parts data:", error);
+      }
     };
 
     fetchExercisesData();
@@ -26,7 +33,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     if (search) {
       const exercisesData = await fetchData(
         "https://exercisedb.p.rapidapi.com/exercises",
-        exerciseOptions
+        exerciseOptions,
       );
 
       const searchedExercises = exercisesData.filter(
@@ -34,7 +41,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           item.name.toLowerCase().includes(search) ||
           item.target.toLowerCase().includes(search) ||
           item.equipment.toLowerCase().includes(search) ||
-          item.bodyPart.toLowerCase().includes(search)
+          item.bodyPart.toLowerCase().includes(search),
       );
 
       window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
