@@ -6,20 +6,20 @@ import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => (
   <Stack
-    direction="row"
-    justifyContent="space-around"
-    sx={{
-      gap: { sm: "123px", xs: "40px" },
-      mt: { sm: "32px", xs: "20px" },
-      justifyContent: "none",
-    }}
-    px="20px"
+    // direction="row"
+    // justifyContent="space-around"
+    // sx={{
+    //   gap: { sm: "123px", xs: "40px" },
+    //   mt: { sm: "32px", xs: "20px" },
+    // }}
+    // px="20px"
+    className="mt-10 flex w-full flex-row items-center gap-5 md:items-start md:justify-start md:px-20"
   >
     <Link to="/">
       <img
         src={Logo}
         alt="logo"
-        className="w-36 h-36 m-0 ml-10 rounded-full bg-primary"
+        className="m-0 h-36 w-36 rounded-full bg-primary md:ml-10"
       />
     </Link>
     <Stack
@@ -31,13 +31,13 @@ const Navbar = () => (
     >
       <Link
         to="/"
-        className="text-decoration-none text-[#3A1212] hover:border-b-4 border-[#99d6b7] transition-all duration-75"
+        className="text-decoration-none border-[#99d6b7] text-[#3A1212] transition-all duration-75 hover:border-b-4"
       >
         Home
       </Link>
       <a
         href="#exercises"
-        className="text-decoration-none text-[#3A1212] hover:border-b-4 border-[#99d6b7] transition-all duration-75"
+        className="text-decoration-none border-[#99d6b7] text-[#3A1212] transition-all duration-75 hover:border-b-4"
       >
         Exercises
       </a>
