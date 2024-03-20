@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   font-family: 'Josefin Sans';
   background-color: #FFFAFB;
@@ -23,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FF2625;
+  color: #99d6b7;
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
@@ -64,17 +69,17 @@ body {
 }
 
 .exercise-card {
-  width: 400px;
-  height: 445px;
+  width: 200px;
+  height: 340px;
   background: #fff;
-  border-top: 4px solid #FF2625;
+  border-top: 4px solid #6fc6c4;
   border-bottom-left-radius: 20px;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding-bottom: 10px;
-  transform: scale(1, 1);
+  /* transform: scale(1, 1); */
   transition: 0.3s all ease-in-out;
 }
 
@@ -83,18 +88,18 @@ body {
 }
 
 .bodyPart-card {
-  transform: scale(1, 1);
+  /* transform: scale(1, 1); */
   transition: 0.3s all ease-in-out;
 }
 
 .exercise-card:hover,
 .bodyPart-card:hover {
-  transform: scale(1.1, 1.1);
+  /* transform: scale(1.1, 1.1); */
 }
 
 .search-btn:hover {
-  color: #FF2625 !important;
-  border: 1px solid #FF2625 !important;
+  color: #99d6b7 !important;
+  border: 1px solid #99d6b7 !important;
 }
 
 .exercise-video {
