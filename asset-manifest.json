@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/folka-fit/public/static/css/main.0c81f0af.css",
-    "main.js": "/folka-fit/public/static/js/main.0d9ee6fe.js",
-    "static/media/banner1.jpg": "/folka-fit/public/static/media/banner1.c9b113c180ca66282ea3.jpg",
-    "static/media/Logo.png": "/folka-fit/public/static/media/Logo.10cda8fc2ad811b8e00b.png",
-    "index.html": "/folka-fit/public/index.html",
-    "main.0c81f0af.css.map": "/folka-fit/public/static/css/main.0c81f0af.css.map",
-    "main.0d9ee6fe.js.map": "/folka-fit/public/static/js/main.0d9ee6fe.js.map"
+    "main.css": "/folka-fit/static/css/main.0c81f0af.css",
+    "main.js": "/folka-fit/static/js/main.3d002964.js",
+    "static/media/banner1.jpg": "/folka-fit/static/media/banner1.c9b113c180ca66282ea3.jpg",
+    "static/media/Logo.png": "/folka-fit/static/media/Logo.10cda8fc2ad811b8e00b.png",
+    "index.html": "/folka-fit/index.html",
+    "main.0c81f0af.css.map": "/folka-fit/static/css/main.0c81f0af.css.map",
+    "main.3d002964.js.map": "/folka-fit/static/js/main.3d002964.js.map"
   },
   "entrypoints": [
     "static/css/main.0c81f0af.css",
-    "static/js/main.0d9ee6fe.js"
+    "static/js/main.3d002964.js"
   ]
 }
