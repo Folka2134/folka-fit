@@ -17,8 +17,8 @@ const App = () => (
   >
     <Navbar />
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/exercise/:id" element={<ExerciseDetail />} />
+      <Route path="/folka-fit/" element={<Home />} />
+      <Route path="/folka-fit/exercise/:id" element={<ExerciseDetail />} />
     </Routes>
     <Footer />
   </Box>
