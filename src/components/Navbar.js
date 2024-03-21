@@ -15,7 +15,7 @@ const Navbar = () => (
     // px="20px"
     className="mt-10 flex w-full flex-row items-center gap-5 md:items-start md:justify-start md:px-20"
   >
-    <Link to="/">
+    <Link to="/folka-fit">
       <img
         src={Logo}
         alt="logo"
@@ -30,7 +30,7 @@ const Navbar = () => (
       alignItems="flex-end"
     >
       <Link
-        to="/"
+        to="/folka-fit"
         className="text-decoration-none border-[#99d6b7] text-[#3A1212] transition-all duration-75 hover:border-b-4"
       >
         Home
