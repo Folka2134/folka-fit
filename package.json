@@ -1,7 +1,7 @@
 {
   "name": "folka-fit",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/folka-fit/public",
+  "homepage": "https://gitname.github.io/folka-fit/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
