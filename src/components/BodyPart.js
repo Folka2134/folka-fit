@@ -1,9 +1,8 @@
 import React from "react";
-import { Stack, Typography } from "@mui/material";
-import Icon from "../assets/icons/gym.png";
 
-const BodyPart = ({ item, setBodyPart, bodyPart }) => (
-  <li
+const BodyPart = ({ item, setBodyPart }) => (
+  <button
+    type="button"
     className="h-full w-full cursor-pointer list-none text-nowrap rounded-lg bg-primary p-5 text-xl font-semibold capitalize text-[#0a110d] transition-all duration-150 hover:bg-secondary "
     onClick={() => {
       setBodyPart(item);
@@ -11,7 +10,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
     }}
   >
     {item}
-  </li>
+  </button>
 );
 
 export default BodyPart;

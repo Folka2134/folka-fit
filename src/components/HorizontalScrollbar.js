@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { Box, Typography } from "@mui/material";
+import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 
 import ExerciseCard from "./ExerciseCard";
 import BodyPart from "./BodyPart";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { FaArrowLeftLong } from "react-icons/fa6";
 
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
